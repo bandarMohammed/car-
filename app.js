@@ -476,7 +476,7 @@ function showToast(message) {
     const toast = document.createElement("div");
     toast.className = "custom-toast";
     toast.innerHTML = `
-        <i class="fa-solid fa-circle-check" style="color:#d4af37; font-size:1.3rem;"></i>
+        <i class="fa-solid fa-circle-check" style="color:#3b5bff; font-size:1.3rem;"></i>
         <span>${message}</span>
     `;
     
@@ -487,12 +487,12 @@ function showToast(message) {
         left: "50%",
         transform: "translateX(-50%) translateY(100px)",
         background: "rgba(15, 15, 21, 0.95)",
-        border: "1px solid #d4af37",
+        border: "1px solid #3b5bff",
         color: "#ffffff",
         padding: "16px 30px",
         borderRadius: "16px",
         zIndex: "9999",
-        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.2)",
+        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(59, 91, 255, 0.2)",
         backdropFilter: "blur(12px)",
         display: "flex",
         alignItems: "center",
