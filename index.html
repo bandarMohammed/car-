@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيرمي للسيارات الفاخرة | معرض الفخامة والتميز</title>
+    <meta name="description" content="اكتشف أحدث وأقوى السيارات الرياضية والفاخرة في العالم لدى فيرمي للسيارات. ضمان، تمويل، وخدمات VIP متكاملة.">
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- شاشة التحميل الفاخرة -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <i class="fa-solid fa-gem"></i>
+                <span>فيرمي</span>
+            </div>
+            <div class="preloader-bar-wrapper">
+                <div class="preloader-bar"></div>
+            </div>
+            <p class="preloader-text">جارٍ تحميل صالة الفخامة...</p>
+        </div>
+    </div>
+
+    <!-- شريط تقدم التمرير -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- التوهجات الخلفية الفاخرة -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- الهيدر (Header) -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-gem gold-text"></i>
+                <span>فيرمي<span class="gold-text"> للسيارات</span></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">الرئيسية</a>
+                <a href="#showroom" class="nav-link">المعرض</a>
+                <a href="#features" class="nav-link">ميزاتنا</a>
+                <a href="#sell-section" class="nav-link">اعرض سيارتك</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#sell-section" class="btn btn-gold btn-header-sell">
+                    <i class="fa-solid fa-plus-circle"></i> بيع سيارتك
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم البطل (Hero Section) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">عالم من الفخامة المطلقة</span>
+                <h1>ارتقِ بأسلوب حياتك مع <br><span class="gold-gradient-text">السيارات الخارقة</span></h1>
+                <p>نقدم لك في صالة فيرمي أرقى تصاميم القوة والجمال من أشهر العلامات التجارية العالمية، مع كفالة شاملة وتجربة شراء استثنائية تليق بك.</p>
+                <div class="hero-buttons">
+                    <a href="#showroom" class="btn btn-gold btn-large">
+                        <i class="fa-solid fa-car"></i> تصفح المعرض
+                    </a>
+                    <a href="#features" class="btn btn-outline btn-large">
+                        <i class="fa-solid fa-circle-info"></i> لماذا فيرمي؟
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3>+150</h3>
+                    <p>سيارة فاخرة</p>
+                </div>
+                <div class="stat-card">
+                    <h3>+2.5K</h3>
+                    <p>عميل سعيد</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>فحص معتمد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم شريط البحث والتصفية (Filter Bar) -->
+    <section id="showroom" class="showroom-section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">صالة العرض التفاعلية</span>
+                <h2 class="section-title">ابحث عن سيارة <span class="gold-gradient-text">أحلامك</span></h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <!-- شريط البحث والتصفية المتطور -->
+            <div class="filter-card">
+                <div class="filter-row-top">
+                    <div class="search-input-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="search-input" placeholder="ابحث بالاسم، الموديل أو الماركة...">
+                    </div>
+                </div>
+                <div class="filter-row-bottom">
+                    <div class="filter-group">
+                        <label for="brand-filter"><i class="fa-solid fa-tags"></i> الشركة المصنعة</label>
+                        <select id="brand-filter">
+                            <option value="all">جميع الماركات</option>
+                            <option value="Ferrari">فيراري</option>
+                            <option value="Porsche">بورشه</option>
+                            <option value="Mercedes">مرسيدس</option>
+                            <option value="Tesla">تيسلا</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-filter"><i class="fa-solid fa-money-bill-wave"></i> النطاق السعري (ريال)</label>
+                        <select id="price-filter">
+                            <option value="all">أي سعر</option>
+                            <option value="under-500k">أقل من 500,000</option>
+                            <option value="500k-1m">500,000 - 1,000,000</option>
+                            <option value="above-1m">أكثر من 1,000,000</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="year-filter"><i class="fa-solid fa-calendar-days"></i> سنة الصنع</label>
+                        <select id="year-filter">
+                            <option value="all">جميع السنوات</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    </div>
+                    <button id="reset-filters" class="btn btn-outline btn-reset">
+                        <i class="fa-solid fa-rotate-left"></i> إرساء التصفية
+                    </button>
+                </div>
+            </div>
+
+            <!-- عداد النتائج -->
+            <div id="results-count" class="results-count"></div>
+
+            <!-- شبكة عرض السيارات الفخمة -->
+            <div id="car-gallery" class="car-gallery-grid">
+                <!-- سيتم ملء البطاقات ديناميكياً بواسطة JavaScript -->
+            </div>
+            
+            <div id="no-results" class="no-results-container hidden">
+                <i class="fa-solid fa-car-tunnel"></i>
+                <h3>عذراً، لم نجد أي سيارة مطابقة لخيارات البحث</h3>
+                <p>حاول تعديل شروط التصفية أو إرساء شريط البحث مجدداً.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مزايا الفخامة من فيرمي (Features) -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="section-subtitle">تجربة فيرمي الفائقة</span>
+                <h2 class="section-title">لماذا تختار <span class="gold-gradient-text">صالة فيرمي؟</span></h2>
+                <div class="title-bar center-bar"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>ضمان ممتد حقيقي</h3>
+                    <p>نقدم ضماناً شاملاً يصل إلى 5 سنوات أو 150,000 كم على جميع المحركات والأنظمة الكهربائية والتقنية للسيارة.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3>فحص معتمد ذو 150 نقطة</h3>
+                    <p>تخضع كل سيارة في معرضنا لفحص فني وهيكلي دقيق وشامل بأحدث الأجهزة الإلكترونية لضمان خلوها من العيوب.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <h3>توصيل VIP مغلق</h3>
+                    <p>نشحن سيارتك الفاخرة إلى باب منزلك في أي مكان في الخليج العربي بواسطة ناقلات VIP مغلقة ومؤمنة بالكامل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم أضف سيارتك للبيع (Add Car Form) -->
+    <section id="sell-section" class="sell-section">
+        <div class="container">
+            <div class="sell-wrapper">
+                <div class="sell-info-content">
+                    <span class="badge">خدمات البائعين</span>
+                    <h2>اعرض سيارتك الفاخرة <br>للبيع في <span class="gold-gradient-text">معرضنا</span></h2>
+                    <p>احصل على أفضل قيمة تسويقية لسيارتك. من خلال منصتنا، سنعرض سيارتك لآلاف المشترين المهتمين بالفئات الرياضية والفاخرة بلمسة زر.</p>
+                    <ul class="sell-benefits-list">
+                        <li><i class="fa-solid fa-check gold-text"></i> تصوير احترافي مجاني لسيارتك</li>
+                        <li><i class="fa-solid fa-check gold-text"></i> تواصل مباشر مع عملاء جادين</li>
+                        <li><i class="fa-solid fa-check gold-text"></i> إدارة كاملة للمعاملات القانونية ونقل الملكية</li>
+                    </ul>
+                </div>
+
+                <!-- نموذج الإضافة الممتاز Glassmorphism -->
+                <div class="sell-form-card">
+                    <h3>تفاصيل عرض السيارة</h3>
+                    <form id="sell-car-form" autocomplete="off">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="form-brand">الشركة المصنعة <span class="required">*</span></label>
+                                <select id="form-brand" required>
+                                    <option value="" disabled selected>اختر الشركة</option>
+                                    <option value="Ferrari">فيراري (Ferrari)</option>
+                                    <option value="Porsche">بورشه (Porsche)</option>
+                                    <option value="Mercedes">مرسيدس (Mercedes)</option>
+                                    <option value="Tesla">تيسلا (Tesla)</option>
+                                    <option value="BMW">بي إم دبليو (BMW)</option>
+                                    <option value="Lamborghini">لامبورغيني (Lamborghini)</option>
+                                    <option value="Aston Martin">أستون مارتن</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-model">الموديل والفئة <span class="required">*</span></label>
+                                <input type="text" id="form-model" placeholder="مثال: SF90 Stradale" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-year">سنة الصنع <span class="required">*</span></label>
+                                <select id="form-year" required>
+                                    <option value="" disabled selected>اختر السنة</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-price">السعر المطلوبة (ريال سعودي) <span class="required">*</span></label>
+                                <input type="number" id="form-price" placeholder="مثال: 850000" min="10000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-mileage">الممشى (كيلومتر) <span class="required">*</span></label>
+                                <input type="number" id="form-mileage" placeholder="مثال: 5000" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-engine">نوع المحرك / الحركة <span class="required">*</span></label>
+                                <select id="form-engine" required>
+                                    <option value="" disabled selected>اختر النوع</option>
+                                    <option value="بنزين">بنزين (V8/V6)</option>
+                                    <option value="هايبرد">هايبرد (Hybrid)</option>
+                                    <option value="كهربائي">كهربائي بالكامل</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="form-image">صورة السيارة <span class="required">*</span></label>
+                                <div class="file-upload-wrapper">
+                                    <input type="file" id="form-image" accept="image/*" class="file-upload-input" required>
+                                    <div class="file-upload-trigger">
+                                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        <span>اضغط لرفع صورة السيارة (أو اسحبها هنا)</span>
+                                    </div>
+                                    <div id="image-preview-container" class="image-preview-container hidden">
+                                        <img id="image-preview" src="#" alt="معاينة الصورة">
+                                        <button type="button" id="remove-preview-btn" class="remove-preview-btn"><i class="fa-solid fa-times"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="form-desc">وصف إضافي ومميزات السيارة</label>
+                                <textarea id="form-desc" rows="3" placeholder="اكتب ميزات فريدة (مثال: حماية نانو سيراميك كاملة، طلبية خاصة، صيانة مجانية...)"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-full mt-4">
+                            <i class="fa-solid fa-rocket"></i> أرسل طلب إدراج السيارة الآن
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- النافذة المنبثقة للتفاصيل الفاخرة للسيارة (Car Details Modal) -->
+    <div id="car-modal" class="modal-overlay hidden">
+        <div class="modal-card glass-modal">
+            <button class="modal-close-btn" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-media-side">
+                    <img id="modal-car-image" src="" alt="صورة السيارة بالتفصيل">
+                </div>
+                <div class="modal-info-side">
+                    <span id="modal-car-brand-badge" class="badge">ماركة</span>
+                    <h2 id="modal-car-name">اسم السيارة بالكامل</h2>
+                    <div class="modal-price-box">
+                        <span class="price-label">السعر المطلوب:</span>
+                        <span id="modal-car-price" class="price-value">0 ريال</span>
+                    </div>
+                    
+                    <h3 class="specs-title"><i class="fa-solid fa-circle-info gold-text"></i> المواصفات الفنية:</h3>
+                    <div class="specs-table">
+                        <div class="spec-item">
+                            <span class="spec-label"><i class="fa-solid fa-calendar gold-text"></i> سنة الصنع</span>
+                            <span id="modal-car-year" class="spec-val">2026</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label"><i class="fa-solid fa-gauge-high gold-text"></i> الممشى</span>
+                            <span id="modal-car-mileage" class="spec-val">0 كم</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label"><i class="fa-solid fa-charging-station gold-text"></i> نوع الحركة</span>
+                            <span id="modal-car-engine" class="spec-val">-</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label"><i class="fa-solid fa-road gold-text"></i> الحالة</span>
+                            <span id="modal-car-status" class="spec-val">شبه جديدة</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-desc-box">
+                        <h3 class="specs-title"><i class="fa-solid fa-comment-dots gold-text"></i> تفاصيل ومزايا:</h3>
+                        <p id="modal-car-desc">هذا النص هو محاكي لوصف ومزايا السيارة الممتازة التي تبرز فخامتها وتجهيزاتها الخاصة المضافة.</p>
+                    </div>
+
+                    <div class="modal-actions">
+                        <a id="modal-whatsapp-btn" href="#" target="_blank" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> تواصل مع البائع عبر واتساب
+                        </a>
+                        <button id="modal-book-btn" class="btn btn-gold">
+                            <i class="fa-solid fa-calendar-check"></i> احجز تجربة قيادة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- الفوتر (Footer) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-column brand-column">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-gem gold-text"></i>
+                    <span>فيرمي<span class="gold-text"> للسيارات</span></span>
+                </a>
+                <p class="footer-desc">نحن في صالة فيرمي نجسد مفهوم الفخامة والأناقة في عالم السيارات الرياضية والفاخرة بتقديم أفضل الماركات وتجربة شراء استثنائية.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column links-column">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#showroom">معرض السيارات</a></li>
+                    <li><a href="#features">لماذا صالة فيرمي؟</a></li>
+                    <li><a href="#sell-section">عرض سيارتك للبيع</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-column">
+                <h3>تواصل معنا</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot gold-text"></i> طريق الملك عبد العزيز، الرياض، المملكة العربية السعودية</li>
+                    <li><i class="fa-solid fa-phone gold-text"></i> +966 11 400 9000</li>
+                    <li><i class="fa-solid fa-envelope gold-text"></i> vip@fermi-motors.com</li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter-column">
+                <h3>النشرة البريدية الحصرية</h3>
+                <p>اشترك معنا لتصلك أحدث طرازات السيارات الفاخرة والعروض الحصرية مباشرة إلى بريدك.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('شكراً لاشتراكك في نشرة فيرمي الفاخرة!'); this.reset();">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <button type="submit" class="btn btn-gold" aria-label="Subscribe">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 فيرمي للسيارات الفاخرة. جميع الحقوق محفوظة. تم التطوير بلمسة فنية ممتازة.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
