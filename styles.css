@@ -9,19 +9,19 @@
     --bg-secondary: #0f0f15;
     --bg-tertiary: #171722;
     
-    --gold-primary: #3b5bff;
-    --gold-light: #9fb2ff;
-    --gold-dark: #12245c;
-    --gold-gradient: linear-gradient(135deg, #9fb2ff 0%, #3b5bff 50%, #12245c 100%);
-    --neon-gradient: linear-gradient(135deg, #3b5bff 0%, #ff5e62 100%);
-
+    --gold-primary: #d4af37;
+    --gold-light: #f3e5ab;
+    --gold-dark: #aa861d;
+    --gold-gradient: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa861d 100%);
+    --neon-gradient: linear-gradient(135deg, #d4af37 0%, #ff5e62 100%);
+    
     --text-primary: #ffffff;
     --text-secondary: #b5b5be;
     --text-muted: #787885;
-
+    
     --glass-bg: rgba(15, 15, 21, 0.75);
-    --glass-border: rgba(59, 91, 255, 0.15);
-    --glass-border-focus: rgba(59, 91, 255, 0.5);
+    --glass-border: rgba(212, 175, 55, 0.15);
+    --glass-border-focus: rgba(212, 175, 55, 0.5);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
     
     --whatsapp-color: #25d366;
@@ -117,7 +117,7 @@ body {
 }
 
 .badge {
-    background: rgba(59, 91, 255, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     border: 1px solid var(--glass-border);
     color: var(--gold-primary);
     padding: 6px 16px;
@@ -148,13 +148,13 @@ body {
 }
 .btn-gold {
     background: var(--gold-gradient);
-    color: #ffffff;
+    color: #000000;
     border: none;
-    box-shadow: 0 4px 20px rgba(59, 91, 255, 0.25);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
 }
 .btn-gold:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 25px rgba(59, 91, 255, 0.45);
+    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.45);
 }
 .btn-outline {
     background: transparent;
@@ -163,7 +163,7 @@ body {
     backdrop-filter: blur(8px);
 }
 .btn-outline:hover {
-    background: rgba(59, 91, 255, 0.05);
+    background: rgba(212, 175, 55, 0.05);
     border-color: var(--gold-primary);
     color: var(--gold-primary);
     transform: translateY(-3px);
@@ -250,7 +250,7 @@ body {
 }
 .logo i {
     font-size: 1.7rem;
-    filter: drop-shadow(0 0 8px rgba(59, 91, 255, 0.4));
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
 }
 .nav-menu {
     display: flex;
@@ -439,7 +439,7 @@ body {
 .search-input-wrapper input:focus {
     outline: none;
     border-color: var(--glass-border-focus);
-    box-shadow: 0 0 15px rgba(59, 91, 255, 0.15);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
 }
 .filter-row-bottom {
     display: grid;
@@ -501,7 +501,7 @@ body {
 .car-card:hover {
     transform: translateY(-10px);
     border-color: var(--gold-primary);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(59, 91, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.1);
 }
 .car-card-img-wrapper {
     position: relative;
@@ -524,7 +524,7 @@ body {
     top: 15px;
     right: 15px;
     background: var(--gold-gradient);
-    color: #ffffff;
+    color: #000000;
     padding: 4px 12px;
     font-weight: 700;
     font-size: 0.75rem;
@@ -652,7 +652,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: rgba(59, 91, 255, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     border: 1px solid var(--glass-border);
     display: flex;
     align-items: center;
@@ -669,7 +669,7 @@ body {
     transition: var(--transition-smooth);
 }
 .feature-card:hover .feature-icon-wrapper i {
-    color: #ffffff;
+    color: #000000;
 }
 .feature-card h3 {
     font-size: 1.4rem;
@@ -810,7 +810,7 @@ body {
 }
 .file-upload-input:hover + .file-upload-trigger {
     border-color: var(--gold-primary);
-    background: rgba(59, 91, 255, 0.03);
+    background: rgba(212, 175, 55, 0.03);
 }
 
 /* معاينة الصورة المرفوعة */
@@ -902,7 +902,7 @@ body {
     transition: var(--transition-fast);
 }
 .modal-close-btn:hover {
-    background: rgba(59, 91, 255, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     border-color: var(--gold-primary);
     color: var(--gold-primary);
     transform: rotate(90deg);
@@ -934,7 +934,7 @@ body {
     margin-bottom: 20px;
 }
 .modal-price-box {
-    background: rgba(59, 91, 255, 0.05);
+    background: rgba(212, 175, 55, 0.05);
     border: 1px solid var(--glass-border);
     padding: 16px 20px;
     border-radius: 16px;
@@ -1072,7 +1072,7 @@ body {
 }
 .social-links a:hover {
     background: var(--gold-gradient);
-    color: #ffffff;
+    color: #000000;
     transform: translateY(-3px);
 }
 .links-column ul, .contact-column ul {
@@ -1179,7 +1179,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2.5rem;
-    filter: drop-shadow(0 0 16px rgba(59,91,255,0.5));
+    filter: drop-shadow(0 0 16px rgba(212,175,55,0.5));
 }
 .preloader-logo span {
     background: var(--gold-gradient);
@@ -1189,7 +1189,7 @@ body {
 .preloader-bar-wrapper {
     width: 220px;
     height: 3px;
-    background: rgba(59,91,255,0.15);
+    background: rgba(212,175,55,0.15);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -1223,7 +1223,7 @@ body {
     background: var(--gold-gradient);
     z-index: 1001;
     transition: width 0.1s linear;
-    box-shadow: 0 0 8px rgba(59,91,255,0.5);
+    box-shadow: 0 0 8px rgba(212,175,55,0.5);
 }
 
 /* التوهج الثالث */
@@ -1261,7 +1261,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(59,91,255,0.04) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(212,175,55,0.04) 0%, transparent 60%);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
